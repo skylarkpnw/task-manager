@@ -1,0 +1,81 @@
+/* General Reset */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f9; /* Light background color */
+  color: #333; /* Dark text color */
+}
+
+.App {
+  max-width: 600px; /* Center the app */
+  margin: 50px auto; /* Add top margin and center horizontally */
+  padding: 20px;
+  background: #fff; /* White background for the app container */
+  border-radius: 8px; /* Smooth corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h1 {
+  text-align: center; /* Center align the title */
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Styling for Form */
+form {
+  display: flex; /* Align input and button side-by-side */
+  margin-bottom: 20px; /* Space below the form */
+}
+
+input {
+  flex: 1; /* Make the input take most of the space */
+  padding: 10px;
+  margin-right: 10px; /* Space between input and button */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 4px; /* Rounded corners for input */
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background-color: #007bff; /* Blue button */
+  color: white; /* White text */
+  cursor: pointer; /* Hand pointer on hover */
+  border-radius: 4px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Styling for Task List */
+ul {
+  list-style: none; /* Remove default list bullets */
+  padding: 0; /* No padding */
+}
+
+li {
+  display: flex; /* Align task title and buttons side-by-side */
+  justify-content: space-between; /* Space out elements in each task */
+  align-items: center; /* Center align items vertically */
+  padding: 10px;
+  background: #f9f9f9; /* Light gray background */
+  margin-bottom: 10px; /* Space between tasks */
+  border-radius: 4px; /* Smooth corners */
+}
+
+li:nth-child(odd) {
+  background: #f1f1f1; /* Slightly darker background for alternating rows */
+}
+
+li span {
+  flex: 1; /* Task title takes most of the row space */
+  margin-right: 10px; /* Space between title and buttons */
+}
+
+li button {
+  margin-left: 5px; /* Space between buttons */
+}
