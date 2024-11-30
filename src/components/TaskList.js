@@ -4,12 +4,12 @@ function TaskList({ tasks, deleteTask, toggleComplete }) {
   return (
     <ul>
       {tasks.map((task) => (
-        <li key={task.id} style={{ textDecoration: task.completed ? "line-through" : "none" }}>
+        <li key={task._id} style={{ textDecoration: task.completed ? "line-through" : "none" }}>
           <span>{task.title}</span>
-          <button onClick={() => toggleComplete(task.id)}>
+          <button onClick={() => toggleComplete(task._id)}>
             {task.completed ? "Undo" : "Complete"}
           </button>
-          <button onClick={() => deleteTask(task.id)}>Delete</button>
+          <button onClick={() => deleteTask(task._id)}>Delete</button>
         </li>
       ))}
     </ul>
